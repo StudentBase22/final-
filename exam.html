@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ريادة الأعمال | الاختبار الذكي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="exam-page">
+    <div class="bg-pattern"></div>
+    <div class="glow-bg"></div>
+
+    <nav class="top-nav">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand">
+                <div class="brand-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="brand-text">ريادة الأعمال</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="menu-item">العودة للملخص</a>
+                <a href="exam.html" class="menu-btn">الاختبار</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="exam-main">
+        <section class="content-section" style="padding-top: 3rem; min-height: calc(100vh - 72px - 200px);">
+            <div class="container">
+                <div class="quiz-wrapper">
+                    <div class="quiz-header">
+                        <h2>منصة التقييم</h2>
+                        <div class="quiz-meta">
+                            <span class="badge-soft"><i class="fa-solid fa-list-ol"></i> 50 سؤال</span>
+                            <span class="badge-soft"><i class="fa-solid fa-clock"></i> تقييم ذاتي</span>
+                        </div>
+                    </div>
+
+                    <div id="quiz-ui" class="quiz-card">
+                        <div class="quiz-progress-container">
+                            <div class="progress-info">
+                                <span class="progress-text" id="question-tracker">السؤال 1 / 50</span>
+                                <span class="progress-percentage" id="progress-percent">2%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-indicator" id="progress"></div>
+                            </div>
+                        </div>
+
+                        <div class="question-area">
+                            <h3 class="question-title" id="question-text">جاري تحميل السؤال...</h3>
+                            <div class="options-list" id="options">
+                                <!-- Options dynamically injected here -->
+                            </div>
+                        </div>
+
+                        <div class="quiz-footer">
+                            <button id="next-btn" class="btn btn-solid btn-large" disabled>
+                                <span>تأكيد وانتقال</span>
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="result-ui" class="quiz-card hidden">
+                        <div class="result-header">
+                            <div class="result-icon" id="result-icon">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <h3 id="result-message">تم إنجاز الاختبار!</h3>
+                            <p id="result-details">لقد أجبت بشكل صحيح على 0 من أصل 50 أسئلة.</p>
+                        </div>
+
+                        <div class="score-display">
+                            <div class="score-number" id="score-text">0/50</div>
+                            <div class="score-label">النتيجة النهائية</div>
+                        </div>
+
+                        <div class="review-section">
+                            <h4 class="review-title">مراجعة الإجابات</h4>
+                            <div class="review-list" id="review-answers">
+                                <!-- Review answers here -->
+                            </div>
+                        </div>
+
+                        <div class="result-actions">
+                            <button id="restart-btn" class="btn btn-solid btn-large">
+                                <i class="fa-solid fa-rotate-right"></i>
+                                <span>إعادة الاختبار</span>
+                            </button>
+                            <a href="index.html" class="btn btn-ghost btn-large" style="margin-right: 1rem;">
+                                العودة للملخص
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-bolt"></i> ريادة الأعمال
+                </div>
+                <p>تصميم وتطوير : رشا العمري</p>
+                <div class="copyright">&copy; 2026 جميع الحقوق محفوظة.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Overlay -->
+    <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-card">
+            <div class="auth-icon"><i class="fa-solid fa-lock"></i></div>
+            <h2>وصول مقيد</h2>
+            <p>الرجاء إدخال كلمة المرور للوصول إلى المنصة</p>
+            <input type="password" id="auth-pass" placeholder="كلمة المرور..." autocomplete="off">
+            <button id="auth-btn" class="btn btn-solid btn-large" style="width: 100%; margin-top: 1.5rem;">دخول</button>
+            <p id="auth-error" class="auth-error hidden">كلمة المرور غير صحيحة!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
