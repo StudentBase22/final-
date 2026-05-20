@@ -2,308 +2,64 @@
 
 const questions = [
     // Multiple Choice
-    {
-        type: "mcq",
-        question: "تحليل الجدوى يهدف إلى:",
-        options: ["إغلاق المشروع", "معرفة إمكانية نجاح المشروع", "زيادة الضرائب", "تقليل العملاء"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "أفضل المشاريع تبدأ من:",
-        options: ["مشكلة أو حاجة لدى العملاء", "تقليد الآخرين", "الصدفة فقط", "زيادة الأسعار"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "من عناصر لوحة تصميم الأفكار:",
-        options: ["العملاء", "الضرائب", "الرواتب", "المخازن"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "عرض القيمة يعني:",
-        options: ["سعر المنتج", "سبب اختيار العميل للمنتج", "عدد الموظفين", "حجم الشركة"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "الكفاءات الأساسية هي:",
-        options: ["نقاط ضعف المشروع", "موارد تميز المشروع عن المنافسين", "التكاليف", "الضرائب"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "أي مما يلي من القوى المؤثرة في السوق؟",
-        options: ["القوى الرياضية", "القوى التكنولوجية", "القوى العسكرية", "القوى الفنية"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "الإنترنت مثال على:",
-        options: ["قوة ديموغرافية", "قوة تكنولوجية", "قوة سياسية", "قوة اجتماعية"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "التغير في عدد السكان يعد من:",
-        options: ["القوى الديموغرافية", "القوى الثقافية", "القوى السياسية", "القوى المالية"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "التضخم والبطالة من:",
-        options: ["القوى الاقتصادية", "القوى الاجتماعية", "القوى العسكرية", "القوى القانونية"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "القوانين الجديدة تعتبر من:",
-        options: ["القوى السياسية والقانونية", "القوى الثقافية", "القوى الرياضية", "القوى التعليمية"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "جمع البيانات مباشرة من العملاء يسمى:",
-        options: ["بحث ثانوي", "بحث أولي", "تحليل مالي", "تخطيط"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "أي مما يلي يعد من أدوات البحث الأولي؟",
-        options: ["الكتب", "المجلات", "الاستبيانات", "الصحف"],
-        answer: 2
-    },
-    {
-        type: "mcq",
-        question: "الاستبيانات يجب أن تكون:",
-        options: ["طويلة جدًا", "معقدة", "قصيرة وواضحة", "عشوائية"],
-        answer: 2
-    },
-    {
-        type: "mcq",
-        question: "مجموعة التركيز تتكون عادة من:",
-        options: ["50 شخصًا", "100 شخص", "5-10 أشخاص", "شخص واحد"],
-        answer: 2
-    },
-    {
-        type: "mcq",
-        question: "النموذج الأولي هو:",
-        options: ["المنتج النهائي", "نسخة تجريبية من المنتج", "خطة تسويقية", "تقرير مالي"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "نموذج العمل التجاري يوضح:",
-        options: ["طريقة تحقيق الأرباح", "لون الشعار", "موقع الشركة فقط", "أسماء الموظفين"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "من عناصر نموذج العمل:",
-        options: ["شرائح العملاء", "الأثاث", "المباني", "الضرائب"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "القنوات تعني:",
-        options: ["طرق إيصال المنتج للعملاء", "طرق التوظيف", "طرق المحاسبة", "طرق التخزين"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "خطة العمل هي:",
-        options: ["وثيقة لتنظيم المشروع", "إعلان", "فاتورة", "عقد بيع"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "من أهداف خطة العمل:",
-        options: ["جذب المستثمرين", "زيادة البطالة", "إغلاق المشروع", "تقليل الإنتاج"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "الملكية الفكرية تهدف إلى:",
-        options: ["زيادة الضرائب", "حماية الأفكار والإبداعات", "تخفيض الأسعار", "تقليل العمال"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "براءة الاختراع تستخدم لحماية:",
-        options: ["الاختراعات", "الرواتب", "العقود", "الضرائب"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "العلامة التجارية تحمي:",
-        options: ["اسم وشعار المشروع", "المبنى", "الموظفين", "الأجهزة"],
-        answer: 0
-    },
-    {
-        type: "mcq",
-        question: "من أخلاقيات الأعمال:",
-        options: ["الغش", "الصدق والأمانة", "الاحتكار", "الخداع"],
-        answer: 1
-    },
-    {
-        type: "mcq",
-        question: "التمويل الذاتي يعني:",
-        options: ["استخدام أموال صاحب المشروع", "الاقتراض فقط", "بيع المشروع", "رفع الأسعار"],
-        answer: 0
-    },
+    { type: "mcq", question: "ما أول خطوة في الانتقال من فكرة إلى مشروع ريادي ناجح؟", options: ["تخطيط الأعمال", "تقييم الفكرة", "دراسة الجدوى", "التخطيط الاستراتيجي"], answer: 1 },
+    { type: "mcq", question: "ما الأداة المستخدمة لتقييم الأفكار خلال فترة قصيرة؟", options: ["تحليل SWOT", "نموذج بورتر", "لوحة رسم وتصميم الأفكار", "تحليل PESTLE"], answer: 2 },
+    { type: "mcq", question: "ما الهدف من دراسة الجدوى؟", options: ["تحديد لون المنتج", "معرفة قابلية الفكرة للتحويل إلى مشروع ناجح", "تحديد الموظفين", "تصميم الشعار"], answer: 1 },
+    { type: "mcq", question: "أي مما يلي يعد من مكونات تحليل الجدوى؟", options: ["تحليل الجدوى المالية", "تحليل التصميم الداخلي", "تحليل الألوان", "تحليل الموارد البشرية فقط"], answer: 0 },
+    { type: "mcq", question: "أي قوة من القوى التالية تؤثر على الصناعات والأسواق؟", options: ["القوى الاقتصادية", "القوى الرياضية", "القوى الفنية", "القوى الشخصية"], answer: 0 },
+    { type: "mcq", question: "ما الذي يوضحه عرض القيمة؟", options: ["سعر المنتج", "أهمية المنتج للعملاء وكيف يلبي حاجاتهم", "عدد الموظفين", "موقع الشركة"], answer: 1 },
+    { type: "mcq", question: "ما المقصود بالكفاءات الأساسية؟", options: ["عدد العملاء", "الميزات الفريدة التي تميز المشروع عن المنافسين", "رأس المال فقط", "مساحة الشركة"], answer: 1 },
+    { type: "mcq", question: "ما عدد العناصر الأساسية في نموذج العمل التجاري؟", options: ["خمسة", "سبعة", "تسعة", "عشرة"], answer: 2 },
+    { type: "mcq", question: "أي من الآتي يعد من عناصر تحليل SWOT؟", options: ["نقاط القوة", "التصميم", "التسويق", "الإنتاج"], answer: 0 },
+    { type: "mcq", question: "ماذا تمثل التهديدات في تحليل SWOT؟", options: ["الفرص المستقبلية", "نقاط القوة", "التغييرات السلبية والمخاطر", "الأرباح"], answer: 2 },
+    { type: "mcq", question: "ما الغرض من تحليل المنافسين؟", options: ["زيادة عدد الموظفين", "معرفة قدرة الشركة على المنافسة", "تحديد الألوان المناسبة", "اختيار اسم الشركة"], answer: 1 },
+    { type: "mcq", question: "أي من الآتي يعد من قوى بورتر الخمسة؟", options: ["شدة المنافسة داخل القطاع", "تحليل الموارد البشرية", "تحليل التصميم", "تحليل الألوان"], answer: 0 },
+    { type: "mcq", question: "ما المقصود بالمنافس المباشر؟", options: ["شركة تقدم نفس المنتج أو الخدمة", "شركة تعمل في دولة أخرى", "شركة جديدة فقط", "شركة لا تبيع منتجات"], answer: 0 },
+    { type: "mcq", question: "ما الهدف من خطة العمل؟", options: ["الترفيه", "تلخيص المشروع فقط", "التخطيط للمشروع وتوضيح أهدافه", "إنشاء شعار الشركة"], answer: 2 },
+    { type: "mcq", question: "ما الذي تتضمنه الخطة التشغيلية؟", options: ["الرؤية فقط", "المهام اليومية وتخصيص الموارد", "اسم الشركة", "أسعار المنافسين"], answer: 1 },
+    { type: "mcq", question: "ما المقصود بالرؤية؟", options: ["صورة مستقبلية لعمل ناجح", "الخطة المالية", "الشعار التجاري", "اسم المنتج"], answer: 0 },
+    { type: "mcq", question: "أي مما يلي يعد من أسباب فشل خطط الأعمال؟", options: ["وضوح الأهداف", "دراسة السوق", "عدم خبرة صاحب المشروع", "وجود خطة تشغيلية"], answer: 2 },
+    { type: "mcq", question: "ما الهدف من النماذج الأولية؟", options: ["زيادة الأسعار", "اختبار الأفكار قبل تقديمها للعملاء", "تعيين الموظفين", "تقليل الدعاية"], answer: 1 },
+    { type: "mcq", question: "أي من الآتي يعد نوعاً من النماذج الأولية؟", options: ["الطباعة ثلاثية الأبعاد", "التحليل المالي", "التعداد السكاني", "تحليل المنافسين"], answer: 0 },
+    { type: "mcq", question: "ما مدة حماية براءة الاختراع عادة؟", options: ["5 سنوات", "10 سنوات", "20 سنة", "50 سنة"], answer: 2 },
+    
+    // Additional MCQs generated from summary
+    { type: "mcq", question: "بم تشير كلمة PESTLE؟", options: ["تحليل البيئة الداخلية", "تحليل الموارد المالية", "أداة لمراقبة العوامل البيئية الخارجية", "نوع من النماذج الأولية"], answer: 2 },
+    { type: "mcq", question: "ماذا يعني مصطلح (W) في تحليل SWOT؟", options: ["نقاط القوة", "نقاط الضعف", "الفرص", "التهديدات"], answer: 1 },
+    { type: "mcq", question: "ما هو المنافس غير المباشر؟", options: ["يقدم نفس المنتج بالضبط", "شركة تبدأ نشاطها مستقبلاً", "يغذي نفس الحاجة من خلال منتجات أخرى", "شركة لا تنافسك إطلاقاً"], answer: 2 },
+    { type: "mcq", question: "تعتبر الأسعار العالية في تحليل SWOT لشركة ستاربكس مثالاً على:", options: ["نقاط القوة", "نقاط الضعف", "الفرص", "التهديدات"], answer: 1 },
+    { type: "mcq", question: "أي من المكونات التالية يعد من أجزاء خطة العمل الرئيسية؟", options: ["الملخص التنفيذي", "اسم المنافسين فقط", "الخطة الرياضية", "تصميم المبنى"], answer: 0 },
+
     // True/False
-    {
-        type: "tf",
-        question: "تحليل الجدوى يقلل من المخاطر.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "جميع الأفكار تعتبر فرصًا ناجحة.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "البحث الأولي يعتمد على جمع بيانات مباشرة من العملاء.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "الاستبيانات دائمًا دقيقة 100٪.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "مجموعات التركيز تساعد في فهم آراء العملاء.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "النموذج الأولي يساعد في اكتشاف أخطاء المنتج.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "الإنترنت لا يؤثر على ريادة الأعمال.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "نموذج العمل التجاري يساعد على فهم طريقة الربح.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "شرائح العملاء هي الفئات المستهدفة من المشروع.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "خطة العمل غير مهمة للمستثمرين.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "الخطة المالية جزء من خطة العمل.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "الملكية الفكرية تحمي الاختراعات والعلامات التجارية.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "براءة الاختراع تستخدم لحماية الشعار فقط.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "الصدق والأمانة من أخلاقيات الأعمال.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "القروض البنكية تعتبر مصدر تمويل.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "رأس المال المخاطر يستخدم للمشاريع الجديدة.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "التمويل الجماعي يتم عبر الإنترنت غالبًا.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "إدارة المشروع تشمل التخطيط والتنظيم.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "التوسع في الأسواق من استراتيجيات النمو.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "المنافسة لا تؤثر على المشاريع الريادية.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "تغير حاجات العملاء يعد من تحديات النمو.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "الامتياز التجاري يسمح باستخدام علامة تجارية معروفة.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "الامتياز التجاري يزيد المخاطر دائمًا.",
-        options: ["صح", "خطأ"],
-        answer: 1
-    },
-    {
-        type: "tf",
-        question: "الشراكات تساعد على نمو المشروع.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    },
-    {
-        type: "tf",
-        question: "التكنولوجيا تخلق فرصًا ريادية جديدة.",
-        options: ["صح", "خطأ"],
-        answer: 0
-    }
+    { type: "tf", question: "دراسة الجدوى تهدف لمعرفة إمكانية نجاح الفكرة كمشروع.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "نموذج العمل التجاري يتضمن خمسة عناصر فقط.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "تحليل SWOT يدرس نقاط القوة والضعف والفرص والتهديدات.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "القوى الاقتصادية من القوى المؤثرة على الأسواق والصناعات.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "المنافس غير المباشر يقدم نفس المنتج تماماً.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "خطة العمل تساعد على تحديد الأهداف بوضوح.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "الرؤية تعبر عن صورة مستقبلية للعمل.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "من فوائد النماذج الأولية تقليل سوء الفهم.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "الطباعة ثلاثية الأبعاد ليست من أنواع النماذج الأولية.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "براءة الاختراع تمنح حماية قانونية للاختراع.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "العلامة التجارية قد تكون شعاراً أو رمزاً.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "حقوق التأليف والنشر تحمي الأعمال الأصلية.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "تحليل المنافسين يساعد على اكتساب ميزات تنافسية.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "تحليل PESTLE يختص بالبيئة الداخلية فقط.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "التهديدات في SWOT تعتبر من العوامل الخارجية.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "النماذج الأولية تستخدم بعد إطلاق المنتج النهائي فقط.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "الخطة التشغيلية تهتم بالمهام اليومية للمشروع.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "من أسباب فشل خطط الأعمال عدم تحديد حاجة العملاء للخدمة.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "القوى السياسية والقانونية من القوى المؤثرة على الصناعة.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "المؤشر الجغرافي يستخدم للسلع ذات المنشأ الجغرافي المحدد.", options: ["صح", "خطأ"], answer: 0 },
+
+    // Additional TF generated from summary
+    { type: "tf", question: "مصفوفة تحليل المنافسين تستخدم لمقارنة شركتك بالشركات الأخرى.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "القدرة التفاوضية للمشترين تزداد عندما يكون لديهم بدائل قليلة.", options: ["صح", "خطأ"], answer: 1 },
+    { type: "tf", question: "التوسع في الأسواق النامية لشركة ستاربكس يعتبر فرصة.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "بيان المهمة يعبر عن غرض الشركة ويجب ألا يزيد عن ٢٥ كلمة.", options: ["صح", "خطأ"], answer: 0 },
+    { type: "tf", question: "خطة العمل لا تحتاج لتحديث بمجرد كتابتها وإعدادها.", options: ["صح", "خطأ"], answer: 1 }
 ];
+
 
 // Tabs Logic for Summary (only runs on index.html)
 if (document.querySelectorAll('.toc-link').length > 0) {
@@ -504,9 +260,16 @@ const TARGET_HASH = "2be4dfcd0e9b4ba807c45e899f068d313875fe281409e44ae8916804ca3
 const authOverlay = document.getElementById('auth-overlay');
 
 if (authOverlay) {
-    // Check if already authenticated
-    if (localStorage.getItem('auth_token') === TARGET_HASH) {
+    // Clear previously stored tokens (if any) to enforce our strict refresh policy
+    localStorage.removeItem('auth_token'); 
+    sessionStorage.removeItem('auth_token');
+    
+    // Check if we are returning from the exam page
+    if (sessionStorage.getItem('skip_auth') === 'true') {
+        // Consume the flag immediately so a subsequent refresh requires the password again
+        sessionStorage.removeItem('skip_auth');
         authOverlay.classList.add('hidden');
+        document.body.style.overflow = '';
     } else {
         // Block scrolling to prevent bypassing
         document.body.style.overflow = 'hidden';
@@ -521,7 +284,7 @@ if (authOverlay) {
         const hash = await sha256(pass);
         
         if (hash === TARGET_HASH) {
-            localStorage.setItem('auth_token', hash);
+            // Password is correct, grant access for this session only (no storage)
             authOverlay.classList.add('hidden');
             document.body.style.overflow = '';
         } else {
@@ -538,8 +301,13 @@ if (authOverlay) {
         }
     }
 
-    authBtn.addEventListener('click', handleLogin);
-    authPass.addEventListener('keypress', (e) => {
+    if (authBtn) authBtn.addEventListener('click', handleLogin);
+    if (authPass) authPass.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') handleLogin();
     });
+} else {
+    // This runs on exam.html (since it has no authOverlay).
+    // Set a flag so when the user clicks 'Return to Summary', they bypass the password once.
+    sessionStorage.setItem('skip_auth', 'true');
 }
+

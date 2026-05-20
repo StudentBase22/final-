@@ -535,7 +535,7 @@ h1, h2, h3, h4 {
 }
 
 .custom-list li::before {
-    content: '—';
+    content: '\2014';
     position: absolute;
     right: 0;
     color: var(--text-tertiary);
@@ -1132,3 +1132,37 @@ h1, h2, h3, h4 {
     margin-bottom: 0 !important;
     animation: fadeIn 0.3s;
 }
+
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-surface);
+}
+.custom-table th, .custom-table td {
+    padding: 1.25rem 1rem;
+    text-align: right;
+    border: 1px solid var(--border-hover);
+    color: var(--text-secondary);
+    vertical-align: top;
+    line-height: 1.8;
+}
+.custom-table th {
+    background: var(--bg-body);
+    color: var(--text-primary);
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.05rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+.custom-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
