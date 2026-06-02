@@ -959,42 +959,12 @@ h1, h2, h3, h4 {
 
 /* Responsive */
 @media (max-width: 992px) {
-    .hero-container, .docs-layout {
-        grid-template-columns: minmax(0, 1fr);
-        width: 100%;
+    .hero-container {
+        grid-template-columns: 1fr;
     }
     
     .hero-visual {
         display: none;
-    }
-    
-    .docs-sidebar {
-        position: relative;
-        top: 0;
-        margin-bottom: 2rem;
-        min-width: 0;
-        max-width: 100%;
-    }
-    
-    .toc-nav {
-        border-right: none;
-        border-bottom: 2px solid var(--border-color);
-        padding-right: 0;
-        padding-bottom: 1rem;
-        flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        max-width: 100%;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-    }
-    
-    .toc-nav::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .toc-link {
-        text-align: center;
     }
     
     .toc-link.active::before {
