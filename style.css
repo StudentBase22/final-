@@ -405,14 +405,90 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* Docs Layout */
+/* Docs responsive improvements (flex-based layout) */
 .docs-layout {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+.docs-sidebar {
+    flex: 0 0 280px;
+}
+
+.docs-content {
+    flex: 1 1 auto;
+    padding-left: 0.5rem;
+}
+
+.doc-panel {
+    display: block;
+    animation: fadeIn 0.4s ease;
+    max-width: 880px;
+    margin: 0 auto 2.5rem;
+    padding: 0 1rem;
+}
+
+.panel-title {
+    font-size: 1.9rem;
+}
+
+.info-block p,
+.custom-list li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.custom-list li::before {
+    content: '•';
+    position: absolute;
+    right: 0.25rem;
+    color: var(--accent-color);
+    font-size: 1rem;
+    top: 0.25rem;
+}
+
+.info-block.highlighted {
+    padding: 1.5rem 1.25rem;
+}
+
+/* Two-column layout on wide screens */
+@media (min-width: 900px) {
+    .docs-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .toc-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Smaller screens tweaks */
+@media (max-width: 600px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .section-heading p {
+        font-size: 1rem;
+    }
+    .custom-list li {
+        font-size: 0.95rem;
+    }
+    .panel-title {
+        font-size: 1.4rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Docs Sidebar */
 .docs-sidebar {
     position: sticky;
     top: 100px;
@@ -463,11 +539,12 @@ h1, h2, h3, h4 {
 }
 
 .doc-panel {
-    display: none;
+    display: block;
     animation: fadeIn 0.4s ease;
 }
 
 .doc-panel.active {
+    /* kept for compatibility with JS if present */
     display: block;
 }
 
